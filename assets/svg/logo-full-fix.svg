@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1507.6819"
+   height="481.42801"
+   viewBox="0 0 398.90745 127.37782"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-56.10554,-73.346553)">
+    <g
+       id="g47">
+      <g
+         id="g41">
+        <g
+           id="g12"
+           transform="matrix(0.4987331,0,0,0.4987331,50.351517,67.739177)">
+          <path
+             d="M 128.96886,49.622805 91.555641,114.64363 106.81052,88.221478 157.8012,176.54011 h 44.44328 z"
+             style="fill:#ff7f2a;stroke-width:4.83701;stroke-linecap:round;stroke-linejoin:round"
+             id="path11" />
+          <path
+             d="m 55.81961,176.54026 50.99067,88.31864 50.99069,-88.31864 z"
+             style="fill:#ff0000;stroke:none;stroke-width:4.83701;stroke-linecap:round;stroke-linejoin:round"
+             id="path5" />
+          <path
+             d="M 44.992081,176.54011 H 55.819842 L 91.555641,114.64363 128.96886,49.622805 123.48547,40.124678 Z"
+             style="fill:#ff6600;stroke-width:5.2041;stroke-linecap:round;stroke-linejoin:round"
+             id="path7" />
+          <path
+             d="M 118.21034,30.988286 34.459391,176.54011 h 10.53269 L 123.48547,40.124678 Z"
+             style="fill:#d45500;stroke-width:5.2041;stroke-linecap:round;stroke-linejoin:round"
+             id="path8" />
+          <path
+             d="M 11.537279,176.54011 H 23.094712 L 112.51818,21.12894 106.81052,11.24324 59.017063,94.024224 Z"
+             style="fill:#803300;stroke-width:5.44762;stroke-linecap:round;stroke-linejoin:round"
+             id="path10" />
+          <path
+             d="M 112.51818,21.12894 23.094712,176.54011 H 34.042879 L 118.00157,30.627068 Z"
+             style="fill:#aa4400;stroke-width:5.44762;stroke-linecap:round;stroke-linejoin:round"
+             id="path9" />
+          <path
+             d="M 137.97115,186.68178 106.8103,132.70947 75.64943,186.68178 Z"
+             style="fill:#ff0000;stroke:none;stroke-width:2.95594;stroke-linecap:round;stroke-linejoin:round"
+             id="path12" />
+        </g>
+        <g
+           id="g13"
+           transform="translate(-1.0959408,3.3424515)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.4891px;font-family:Mechsuit;-inkscape-font-specification:Mechsuit;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:40.3553;stroke-linecap:round;stroke-linejoin:round"
+             x="189.97624"
+             y="137.3812"
+             id="text5"><tspan
+               id="tspan5"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Mechsuit;-inkscape-font-specification:Mechsuit;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:40.3552"
+               x="189.97624"
+               y="137.3812">ASCENSION</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:47.9788px;font-family:Roboto;-inkscape-font-specification:'Roboto Heavy';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:73.0942;stroke-linecap:round;stroke-linejoin:round"
+             x="188.47704"
+             y="176.7238"
+             id="text12"><tspan
+               id="tspan12"
+               style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Heavy';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:73.094"
+               x="188.47704"
+               y="176.7238">SIM STUDIO</tspan></text>
+        </g>
+      </g>
+      <path
+         id="path47"
+         style="fill:#ff0000;stroke:#ff0000;stroke-width:0.246386;stroke-linecap:square"
+         d="M 201.03938,73.469926 139.10777,200.60117 h 2.69028 2.68924 L 206.4189,73.469926 h -2.68976 z" />
+    </g>
+  </g>
+</svg>
