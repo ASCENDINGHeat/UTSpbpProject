@@ -1,21 +1,39 @@
-<b>ASCENSION SIM STUDIO - Website</b>
+# ASCENSION SIM STUDIO — Website
 
-Ini adalah proyek website untuk ASCENSION SIM STUDIO, sebuah studio fiksi yang berfokus pada pembuatan mod premium untuk game balap Assetto Corsa. Website ini berfungsi sebagai platform untuk menampilkan dan menjual produk-produk modifikasi mobil dan trek balap yang imersif dan realistis.
+**ASCENSION SIM STUDIO** adalah sebuah studio fiksi yang berfokus pada pembuatan **mod premium untuk game balap _Assetto Corsa_**.  
+Website ini berfungsi sebagai platform untuk **menampilkan dan menjual produk-produk modifikasi mobil dan trek balap** yang imersif serta realistis.
 
-Proyek ini dibuat menggunakan HTML, Tailwind CSS, dan JavaScript sederhana untuk fungsionalitas dasar seperti carousel gambar dan menu mobile.
+---
 
-Tampilan Website
+## Teknologi yang Digunakan
 
-Berikut adalah beberapa tangkapan layar dari tampilan website:
+- **HTML** – Struktur utama halaman  
+- **Tailwind CSS** – Styling modern dan responsif  
+- **JavaScript (Vanilla)** – Fungsionalitas dasar seperti:
+  - Carousel gambar  
+  - Navigasi menu versi mobile  
 
-Suasana balapan saat matahari terbenam.
+---
 
-Detail bagian belakang mobil di lintasan lurus.
+## Tampilan Website
 
-Tampilan detail sisi mobil dengan livery kustom.
+Beberapa tangkapan layar dari tampilan website:
 
-Video YouTube (Tentatif)
+- Suasana balapan saat matahari terbenam  
+- Detail bagian belakang mobil di lintasan lurus  
+- Tampilan detail sisi mobil dengan livery kustom  
 
-Tonton video presentasi proyek kami di YouTube untuk melihat lebih banyak fitur dan detail dari website dan mod yang kami tawarkan.
+> *(Gambar-gambar pratinjau dapat ditambahkan di sini)*
 
-(Link Video Akan Ditambahkan di Sini)
+---
+
+## Video YouTube (Tentatif)
+
+Tonton video presentasi proyek kami di YouTube untuk melihat lebih banyak fitur dan detail dari website serta mod yang kami tawarkan.
+
+📺 **[Link Video Akan Ditambahkan di Sini]**
+
+---
+
+**© 2025 ASCENSION SIM STUDIO**  
+Created with HTML, Tailwind CSS, and JavaScript.
