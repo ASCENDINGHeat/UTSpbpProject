@@ -3,7 +3,6 @@ const products = {
         name: "GT3 Pack",
         price: "$19,99",
         description: "Experience the thrill of high-performance racing with our GT3 Pack, featuring meticulously crafted cars that deliver unparalleled speed and precision on the track. This pack includes: \n\n- Porsche 911 GT3 R\n- Audi R8 LMS GT3\n- BMW M6 GT3\n- Mercedes-AMG GT3\n- Ferrari 296 GT3\n- Lamborghini Huracán GT3 EVO II\n- And More!",
-        // provide an images array for the modal carousel
         images: [
             "./assets/img/productImg/GT3pack/packcover.jpg",
             "./assets/img/productImg/GT3pack/carouselimg (1).jpg",
@@ -109,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const closeModalButton = document.getElementById('close-modal-button');
         const readMoreButtons = document.querySelectorAll('.read-more-button');
 
-        // carousel elements inside modal
         const modalSlidesContainer = document.getElementById('modal-slides');
         const modalPrev = document.getElementById('modal-prev');
         const modalNext = document.getElementById('modal-next');
@@ -128,8 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 slide.appendChild(img);
                 modalSlidesContainer.appendChild(slide);
             });
-            // reset transform
-            modalSlidesContainer.style.transform = `translateX(${ -modalCurrentIndex * 100 }%)`;
+            modalSlidesContainer.style.transform = `translateX(0%)`;
         };
 
         const goToModalSlide = (index, total) => {
@@ -141,11 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 modalCurrentIndex = index;
             }
-            modalSlidesContainer.style.transform = `translateX(${ -modalCurrentIndex * 100 }%)`;
+            modalSlidesContainer.style.transform = `translateX(${-modalCurrentIndex * 100}%)`;
         };
 
-        const openModal = (product) => {
-            // Populate modal content
+        const openModal = (product, productId) => {
+            console.log('Opening modal for:', product.name); // Debugging
             document.getElementById('modal-product-name').textContent = product.name;
             document.getElementById('modal-product-price').textContent = product.price;
             document.getElementById('modal-product-description').textContent = product.description;
@@ -159,12 +156,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 specsList.appendChild(listItem);
             }
 
-            // build modal slides from product.images (fallback to single image)
-            const images = product.images && product.images.length ? product.images : [product.image || ''];
+            const images = product.images && product.images.length ? product.images : ['./assets/img/default.jpg'];
             modalCurrentIndex = 0;
             buildModalSlides(images);
 
-            // show modal with transition
             productModal.classList.remove('hidden');
             setTimeout(() => {
                 productModal.classList.remove('opacity-0');
@@ -177,12 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
             modalContent.classList.add('scale-95');
             setTimeout(() => {
                 productModal.classList.add('hidden');
-                // cleanup slides
                 if (modalSlidesContainer) modalSlidesContainer.innerHTML = '';
             }, 300);
         };
 
-        // wire up read more buttons
         readMoreButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const productId = button.dataset.productId;
@@ -197,7 +190,6 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModalButton.addEventListener('click', closeModal);
         }
 
-        // modal prev/next handlers
         if (modalPrev) {
             modalPrev.addEventListener('click', () => {
                 const total = modalSlidesContainer ? modalSlidesContainer.children.length : 0;
@@ -211,14 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // click outside to close
         window.addEventListener('click', (event) => {
             if (event.target === productModal) {
                 closeModal();
             }
         });
 
-        // optional: keyboard navigation for modal carousel
         window.addEventListener('keydown', (e) => {
             if (productModal && !productModal.classList.contains('hidden')) {
                 const total = modalSlidesContainer ? modalSlidesContainer.children.length : 0;
@@ -228,24 +218,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
 
-const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
 
-addToCartButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const productId = button.dataset.productId;
-        const product = products[productId];
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productId = button.dataset.productId;
+            const product = products[productId];
 
-        if (product) {
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cart.push({
-                id: productId,
-                name: product.name,
-                price: product.price
-            });
-            localStorage.setItem('cart', JSON.stringify(cart));
-            alert(`${product.name} has been added to your cart!`);
-        }
+            if (product) {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push({
+                    id: productId,
+                    name: product.name,
+                    price: product.price
+                });
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(`${product.name} has been added to your cart!`);
+            }
+        });
     });
 });
