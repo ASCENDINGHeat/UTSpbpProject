@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('modal-product-name').textContent = product.name;
             document.getElementById('modal-product-price').textContent = product.price;
             document.getElementById('modal-product-description').textContent = product.description;
+            document.getElementById('modal-add-to-cart-button').dataset.productId = productId;
 
             const specsList = document.getElementById('modal-product-specs');
             specsList.innerHTML = '';
@@ -187,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const productId = button.dataset.productId;
                 const product = products[productId];
                 if (product) {
-                    openModal(product);
+                    openModal(product, productId);
                 }
             });
         });
@@ -227,4 +228,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+});
+
+const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const productId = button.dataset.productId;
+        const product = products[productId];
+
+        if (product) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({
+                id: productId,
+                name: product.name,
+                price: product.price
+            });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(`${product.name} has been added to your cart!`);
+        }
+    });
 });

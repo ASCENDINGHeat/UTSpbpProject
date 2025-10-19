@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./style/tailwind.css">
+</head>
+<body>
+    <div class="flex flex-col min-h-screen">
+        <nav class="sticky top-0 z-50 flex flex-col w-full text-white bg-gray-800 shadow-lg">
+            <div class="flex flex-auto w-full px-4 mx-auto">
+                <div class="flex justify-between w-full h-16 space-x-8">
+                    <div class="flex items-center flex-shrink-0">
+                        <a href="./index.html" class="text-xl font-bold">
+                            <img src="./assets/svg/logo-full-fix.svg" alt="icon" class="inline-block w-auto h-[7vh] mr-2">
+                        </a>
+                    </div>
+                    <div class="items-center hidden space-x-8 md:flex">
+                        <a href="./shop.html" class="px-3 py-2 rounded-md hover:bg-gray-700">Shop</a>
+                        <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">Overtake.gg</a>
+                        <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">About</a>
+                    </div>
+                    <div class="items-center hidden md:flex">
+                        <a href="./checkout.html" class="px-3 py-2 rounded-md hover:bg-gray-700">
+                            <button class="px-4 py-2 text-white bg-green-600 rounded-lg hover:bg-green-700">
+                                <img src="./assets/icon/shopping-cart.png" alt="cart" class="h-[2vh] fill-white">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="flex-grow bg-gray-100 p-4 md:p-10">
+            <div class="container mx-auto">
+                <h1 class="text-3xl font-bold mb-6">Checkout</h1>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="md:col-span-2">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h2 class="text-2xl font-bold mb-4">Billing Details</h2>
+                            <form id="checkout-form">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                                        <input type="text" id="first-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                                    </div>
+                                    <div>
+                                        <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                                        <input type="text" id="last-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
+                                    <input type="text" id="address" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                                </div>
+                                <div class="mt-4">
+                                    <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+                                    <input type="text" id="city" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                                    <div>
+                                        <label for="zip" class="block text-sm font-medium text-gray-700">ZIP Code</label>
+                                        <input type="text" id="zip" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                                    </div>
+                                    <div>
+                                        <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+                                        <input type="text" id="country" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <button type="submit" class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">Place Order</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="md:col-span-1">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h2 class="text-2xl font-bold mb-4">Your Order</h2>
+                            <div id="cart-summary">
+                            </div>
+                            <div class="flex justify-between font-bold text-lg mt-4">
+                                <span>Total</span>
+                                <span id="cart-total">$0,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="flex flex-col items-center justify-center p-4 m-0 bg-gray-800">
+            <div class="flex flex-col mx-auto text-center md:flex-row md:text-left">
+                <div class="flex flex-col items-center justify-center p-2 m-1 md:items-start md:justify-start">
+                    <div id="about" class="flex flex-col mb-4">
+                        <h1 class="text-sm text-amber-400 font-semibold font-[Roboto]">About ASCENSION Sim Studio</h1>
+                        <p class="text-sm text-gray-400 font-normal font-[Roboto]">
+                            ASCENSION SIM STUDIO Crafting premium Assetto Corsa mods with an unwavering commitment to realism and immersion. Experience the art of virtual driving, perfected.
+                        </p>
+                    </div>
+                    <div id="links" class="flex flex-col">
+                        <a href="./shop.html" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Shop</a>
+                        <a href="discord.gg/" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Discord</a>
+                        <a href="./about.html" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">About</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center p-2 m-1 md:items-start md:justify-start">
+                    <div id="contacts" class="flex flex-col mb-4">
+                        <h1 class="text-sm text-amber-400 font-semibold font-[Roboto]">Contacts</h1>
+                        <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Customer Contact</a>
+                        <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Business Contact</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center p-2 m-1 md:items-start md:justify-start">
+                    <div id="information" class="flex flex-col items-start">
+                        <h1 class="text-sm text-amber-400 font-semibold font-[Roboto]">Information</h1>
+                        <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600 whitespace-nowrap">Terms of Service</a>
+                        <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">F.A.Q</a>
+                    </div>
+                </div>
+            </div>
+            <div class="items-center justify-center mt-4">
+                <p class="text-amber-400 text-sm font-bold font-[Roboto]">&copy;2025 ASCENSION SIM STUDION</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./script/checkout.js"></script>
+</body>
+</html>
