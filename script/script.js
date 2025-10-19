@@ -66,7 +66,7 @@ goToSlide(0);
 
 document.addEventListener('DOMContentLoaded', () => {
     // Check if we are on the product page
-    if (window.location.pathname.endsWith('product.html')) {
+    if (window.location.pathname.endsWith('productinfo.html')) {
         const urlParams = new URLSearchParams(window.location.search);
         const productId = urlParams.get('id');
         const product = products[productId];
