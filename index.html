@@ -26,8 +26,8 @@
 
                     <div class="items-center hidden md:flex">
                         <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">
-                            <button class="px-4 py-2 text-white bg-green-600 rounded-lg hover:bg-green-700">
-                                <img src="./assets/icon/shopping-cart.png" alt="cart" class="h-[2vh] fill-white">
+                            <button class="flex flex-col items-center max-w-full px-4 py-2 text-white bg-green-600 rounded-lg hover:bg-green-700">
+                                <img src="./assets/icon/shopping-cart.png" alt="cart" class="col-auto h-[2vh] fill-white">
                             </button>
                         </a>
                     </div>
@@ -47,6 +47,11 @@
                 <a href="#" class="block px-4 py-2 hover:bg-gray-700">Cars</a>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-700">Overtake.gg</a>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-700">About</a>
+                <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">
+                    <button class="flex flex-col items-center max-w-full px-4 py-2 text-white bg-green-600 rounded-lg hover:bg-green-700">
+                        <img src="./assets/icon/shopping-cart.png" alt="cart" class="h-[2vh] fill-white">
+                    </button>
+                </a>
             </div>
         </nav>
         <div class="flex items-center justify-center flex-grow bg-blue-900">
@@ -77,10 +82,10 @@
             </div>
         </div>
     </div>
-    <footer class="flex flex-col items-center justify-center p-1 m-0 bg-gray-800">
-        <div class="flex flex-row mx-[20vw]">
-            <div class="flex flex-col items-start justify-center p-2 m-1">
-                <div id="about" class="flex flex-col">
+    <footer class="flex flex-col items-center justify-center p-4 m-0 bg-gray-800">
+        <div class="flex flex-col mx-auto text-center md:flex-row md:text-left">
+            <div class="flex flex-col items-center justify-center p-2 m-1 md:items-start md:justify-start">
+                <div id="about" class="flex flex-col mb-4">
                     <h1 class="text-sm text-amber-400 font-semibold font-[Roboto]">About ASCENSION Sim Studio</h1>
                     <p class="text-sm text-gray-400 font-normal font-[Roboto]">
                         ASCENSION SIM STUDIO Crafting premium Assetto Corsa mods with an unwavering commitment to realism and immersion. Experience the art of virtual driving, perfected.
@@ -89,17 +94,17 @@
                 <div id="links" class="flex flex-col">
                     <a href="./shop.html" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Shop</a>
                     <a href="discord.gg/" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Discord</a>
-                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">About</a>
+                    <a href="./about.html" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">About</a>
                 </div>
             </div>
-            <div class="items-center justify-center p-2 m-1">
-                <div id="contacts" class="flex-col">
+            <div class="flex flex-col items-center justify-center p-2 m-1 md:items-start md:justify-start">
+                <div id="contacts" class="flex flex-col mb-4">
                     <h1 class="text-sm text-amber-400 font-semibold font-[Roboto]">Contacts</h1>
                     <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Customer Contact</a>
                     <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Business Contact</a>
                 </div>
             </div>
-            <div class="items-center justify-center p-2 m-1">
+            <div class="flex flex-col items-center justify-center p-2 m-1 md:items-start md:justify-start">
                 <div id="information" class="flex flex-col items-start">
                     <h1 class="text-sm text-amber-400 font-semibold font-[Roboto]">Information</h1>
                     <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600 whitespace-nowrap">Terms of Service</a>
@@ -107,7 +112,7 @@
                 </div>
             </div>
         </div>
-        <div class="items-center justify-center">
+        <div class="items-center justify-center mt-4">
             <p class="text-amber-400 text-sm font-bold font-[Roboto]">&copy;2025 ASCENSION SIM STUDION</p>
         </div>
     </footer>
