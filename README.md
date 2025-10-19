@@ -23,8 +23,7 @@ Beberapa tangkapan layar dari tampilan website:
 - Detail bagian belakang mobil di lintasan lurus  
 - Tampilan detail sisi mobil dengan livery kustom  
 
-> *(Gambar-gambar pratinjau dapat ditambahkan di sini)*
-
+> 
 ---
 
 ## Video YouTube (Tentatif)
@@ -32,6 +31,18 @@ Beberapa tangkapan layar dari tampilan website:
 Tonton video presentasi proyek kami di YouTube untuk melihat lebih banyak fitur dan detail dari website serta mod yang kami tawarkan.
 
 📺 **[Link Video Akan Ditambahkan di Sini]**
+
+---
+
+## Fair Use Disclaimer
+
+This website and all related project content were created **for educational and non-commercial demonstration purposes only**.  
+Some elements such as game names, car brands, or visual assets may be **copyrighted materials owned by third parties**.  
+All copyrights and trademarks mentioned are **the property of their respective owners**.  
+
+There is **no ownership claim or official affiliation** with _Assetto Corsa_, its developers, or any automotive companies referenced.  
+
+If any copyright holder believes their material has been used inappropriately, please contact us for **clarification or removal**.
 
 ---
 

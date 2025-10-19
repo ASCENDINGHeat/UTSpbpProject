@@ -9,19 +9,27 @@
 <body>
     <div class="flex flex-col min-h-screen">
         <nav class="sticky top-0 z-50 flex flex-col w-full text-white bg-gray-800 shadow-lg">
-            <div class="flex flex-auto px-4 mx-auto">
-                <div class="flex justify-between h-16 space-x-3">
+            <div class="flex flex-auto w-full px-4 mx-auto">
+                <div class="flex justify-between w-full h-16 space-x-8">
                     <div class="flex items-center flex-shrink-0">
                         <a href="./index.html" class="text-xl font-bold">
-                            <img src="./assets/svg/logo-full-fix.svg" alt="icon" class="inline-block w-auto h-8 mr-2">
+                            <img src="./assets/svg/logo-full-fix.svg" alt="icon" class="inline-block w-auto h-[7vh] mr-2">
                         </a>
                     </div>
 
                     <div class="items-center hidden space-x-8 md:flex">
-                        <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">Shop</a>
+                        <a href="./shop.html" class="px-3 py-2 rounded-md hover:bg-gray-700">Shop</a>
                         <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">Cars</a>
                         <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">Overtake.gg</a>
                         <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">About</a>
+                    </div>
+
+                    <div class="items-center hidden md:flex">
+                        <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">
+                            <button class="px-4 py-2 text-white bg-green-600 rounded-lg hover:bg-green-700">
+                                <img src="./assets/icon/shopping-cart.png" alt="cart" class="h-[2vh] fill-white">
+                            </button>
+                        </a>
                     </div>
 
                     <div class="flex items-center md:hidden">
@@ -35,14 +43,34 @@
             </div>
 
             <div id="mobile-menu" class="hidden md:hidden">
-                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Shop</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Cars</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Overtake.gg</a>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-700">About</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Services</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
             </div>
         </nav>
-        <div class="flex items-center justify-center flex-grow bg-blue-900">
-            
+        <div class="flex items-center justify-center flex-grow bg-[url('../assets/img/bgimage (6).jpg')] bg-cover bg-center bg-no-repeat p-10">
+            <div class="grid grid-cols-4 p-5 space-x-3 space-y-3 border-4 border-gray-700 bg-black/70 rounded-4xl backdrop-blur-md">
+                <h1 class="col-span-4 text-start text-white font-black font-[Arial] text-[10vh]">Products</h1>
+                <!-- product grid -->
+                <div id="ProdGrid" class="overflow-hidden transition-transform duration-300 transform bg-white shadow-lg rounded-2xl group hover:-translate-y-2">
+                    <img src="./assets/img/productImg/GT3pack/packcover.jpg" alt="product1" class="mb-2 rounded-xl aspect-auto">
+                    <div class="p-4">
+                        <h1 class="text-black text-start font-black font-[Arial] underline">GT3 Pack</h1>
+                        <h2 class="text-gray-600 text-start font-bold font-[Arial] underline">$19,99</h2>
+                        <p class="overflow-y-scroll text-justify text-gray-400">
+                            Experience the thrill of high-performance racing with our GT3 Pack, featuring meticulously crafted cars that deliver unparalleled speed and precision on the track.
+                        </p>
+                        <a href="#">
+                            <button class="px-4 py-2 text-white transition-opacity duration-300 bg-blue-500 rounded-lg opacity-0 group-hover:opacity-100 hover:scale-105">Read more</button>
+                        </a>
+                        <a href="#">
+                            <button class="px-4 py-2 text-white transition-opacity duration-300 bg-green-500 rounded-lg opacity-0 group-hover:opacity-100 hover:scale-105">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
     <footer class="flex flex-col items-center justify-center p-1 m-0 bg-gray-800">
@@ -55,8 +83,8 @@
                     </p>
                 </div>
                 <div id="links" class="flex flex-col">
-                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Shop</a>
-                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Discord</a>
+                    <a href="./shop.html" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Shop</a>
+                    <a href="discord.gg/" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Discord</a>
                     <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">About</a>
                 </div>
             </div>
@@ -70,7 +98,7 @@
             <div class="items-center justify-center p-2 m-1">
                 <div id="information" class="flex flex-col items-start">
                     <h1 class="text-sm text-amber-400 font-semibold font-[Roboto]">Information</h1>
-                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Terms of Service</a>
+                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600 whitespace-nowrap">Terms of Service</a>
                     <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">F.A.Q</a>
                 </div>
             </div>

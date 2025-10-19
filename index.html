@@ -9,11 +9,11 @@
 <body>
     <div class="flex flex-col min-h-screen">
         <nav class="sticky top-0 z-50 flex flex-col w-full text-white bg-gray-800 shadow-lg">
-            <div class="flex flex-auto px-4 mx-auto">
-                <div class="flex justify-between h-16 space-x-3">
+            <div class="flex flex-auto w-full px-4 mx-auto">
+                <div class="flex justify-between w-full h-16 space-x-8">
                     <div class="flex items-center flex-shrink-0">
-                        <a href="#" class="text-xl font-bold">
-                            <img src="./assets/svg/logo-full-fix.svg" alt="icon" class="inline-block w-auto h-8 mr-2">
+                        <a href="./index.html" class="text-xl font-bold">
+                            <img src="./assets/svg/logo-full-fix.svg" alt="icon" class="inline-block w-auto h-[7vh] mr-2">
                         </a>
                     </div>
 
@@ -22,6 +22,14 @@
                         <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">Cars</a>
                         <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">Overtake.gg</a>
                         <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">About</a>
+                    </div>
+
+                    <div class="items-center hidden md:flex">
+                        <a href="#" class="px-3 py-2 rounded-md hover:bg-gray-700">
+                            <button class="px-4 py-2 text-white bg-green-600 rounded-lg hover:bg-green-700">
+                                <img src="./assets/icon/shopping-cart.png" alt="cart" class="h-[2vh] fill-white">
+                            </button>
+                        </a>
                     </div>
 
                     <div class="flex items-center md:hidden">
@@ -35,10 +43,10 @@
             </div>
 
             <div id="mobile-menu" class="hidden md:hidden">
-                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Shop</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Cars</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Overtake.gg</a>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-700">About</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Services</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
             </div>
         </nav>
         <div class="flex items-center justify-center flex-grow bg-blue-900">
@@ -59,11 +67,11 @@
                 
                 </div>
                 
-                <button id="prev-button" class="w-[10vh] absolute p-2 -translate-y-1/2 rounded-full top-1/2 left-4 bg-white/50 hover:bg-white/80 justify-center flex flex-auto">
+                <button id="prev-button" class="w-[10vw] absolute p-2 -translate-y-1/2 rounded-full top-1/2 left-4 bg-white/50 hover:bg-white/80 justify-center flex flex-auto">
                     <img src="./assets/icon/angle-left.svg" alt="previousbtn" class="max-w-10 max-h-10">
                 </button>
                 
-                <button id="next-button" class="w-[10vh] absolute p-2 -translate-y-1/2 rounded-full top-1/2 right-4 bg-white/50 hover:bg-white/80 justify-center flex flex-auto">
+                <button id="next-button" class="w-[10vw] absolute p-2 -translate-y-1/2 rounded-full top-1/2 right-4 bg-white/50 hover:bg-white/80 justify-center flex flex-auto">
                     <img src="./assets/icon/angle-left.svg" alt="next" class="rotate-180 max-w-10 max-h-10">
                 </button>
             </div>
@@ -79,8 +87,8 @@
                     </p>
                 </div>
                 <div id="links" class="flex flex-col">
-                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Shop</a>
-                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Discord</a>
+                    <a href="./shop.html" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Shop</a>
+                    <a href="discord.gg/" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Discord</a>
                     <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">About</a>
                 </div>
             </div>
@@ -94,7 +102,7 @@
             <div class="items-center justify-center p-2 m-1">
                 <div id="information" class="flex flex-col items-start">
                     <h1 class="text-sm text-amber-400 font-semibold font-[Roboto]">Information</h1>
-                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Terms of Service</a>
+                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600 whitespace-nowrap">Terms of Service</a>
                     <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">F.A.Q</a>
                 </div>
             </div>
