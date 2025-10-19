@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/tailwind.css">
+</head>
+<body>
+    <div class="flex flex-col min-h-screen">
+        <nav class="sticky top-0 z-50 flex flex-col w-full text-white bg-gray-800 shadow-lg backdrop-blur-md bg-opacity-90">
+            <div class="flex flex-auto w-full px-4 mx-auto">
+                <div class="flex justify-between w-full h-16 space-x-8">
+                    <div class="flex items-center flex-shrink-0">
+                        <a href="./index.html" class="text-xl font-bold">
+                            <img src="./assets/svg/logo-full-fix.svg" alt="icon" class="inline-block w-auto h-[7vh] mr-2">
+                        </a>
+                    </div>
+
+                    <div class="items-center hidden space-x-8 md:flex">
+                        <a href="./shop.html" class="px-3 py-2 rounded-md hover:bg-gray-700">Shop</a>
+                        <a href="overtake.gg/" class="px-3 py-2 rounded-md hover:bg-gray-700">Overtake.gg</a>
+                        <a href="./about.html" class="px-3 py-2 rounded-md hover:bg-gray-700">About</a>
+                    </div>
+
+                    <div class="items-center hidden md:flex">
+                        <a href="./checkout.html" class="px-3 py-2 rounded-md hover:bg-gray-700">
+                            <button class="px-4 py-2 text-white bg-green-600 rounded-lg hover:bg-green-700">
+                                <img src="./assets/icon/shopping-cart.png" alt="cart" class="h-[2vh] fill-white">
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center md:hidden">
+                        <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-700">
+                            <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="./shop.html" class="block px-4 py-2 hover:bg-gray-700">Shop</a>
+                <a href="overtake.gg/" class="block px-4 py-2 hover:bg-gray-700">Overtake.gg</a>
+                <a href="./about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+            </div>
+        </nav>
+        
+        <main class="flex-grow p-6 bg-gray-100">
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                <h1 class="text-3xl font-bold mb-6 text-center">Terms of Service</h1>
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold mb-4">1. Acceptance of Terms</h2>
+                    <p class="mb-2">By accessing or using our services, you agree to be bound by these Terms of Service. If you do not agree, please do not use our services.</p>
+                </section>
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold mb-4">2. User Responsibilities</h2>
+                    <p class="mb-2">You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.</p>
+                </section>
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold mb-4">3. Intellectual Property</h2>
+                    <p class="mb-2">All content provided on our platform is the intellectual property of ASCENSION Sim Studio and is protected by copyright laws.</p>
+                </section>
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold mb-4">4. Limitation of Liability</h2>
+                    <p class="mb-2">ASCENSION Sim Studio shall not be liable for any damages arising from the use or inability to use our services.</p>
+                </section>
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold mb-4">5. Changes to Terms</h2>
+                    <p class="mb-2">We reserve the right to modify these Terms of Service at any time. Changes will be effective upon posting on our website.</p>
+                </section>
+                <section>
+                    <h2 class="text-2xl font-semibold mb-4">6. Contact Us</h2>
+                    <p>If you have any questions about these Terms of Service, please contact us at <a href="mailto:"></a></p>
+                </section>
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold mb-4">Disclaimer</h2>
+                    <p class="mb-2">
+                        This project is created for educational purposes only as part of a school assignment. All content, including images, text, and assets, is used solely for demonstration and learning. 
+                    </p>
+                    <p class="mb-2">
+                        Any trademarks, logos, or copyrighted materials referenced or displayed in this project remain the property of their respective owners. No commercial use or distribution is intended or permitted.
+                    </p>
+                    <p class="mb-2">
+                        If you are the owner of any content used in this project and have concerns, please contact us immediately, and we will address the issue promptly.
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer class="flex flex-col items-center justify-center p-4 m-0 bg-gray-800">
+        <div class="flex flex-col mx-auto text-center md:flex-row md:text-left">
+            <div class="flex flex-col items-center justify-center p-2 m-1 md:items-start md:justify-start">
+                <div id="about" class="flex flex-col mb-4">
+                    <h1 class="text-sm text-amber-400 font-semibold font-[Roboto]">About ASCENSION Sim Studio</h1>
+                    <p class="text-sm text-gray-400 font-normal font-[Roboto]">
+                        ASCENSION SIM STUDIO Crafting premium Assetto Corsa mods with an unwavering commitment to realism and immersion. Experience the art of virtual driving, perfected.
+                    </p>
+                </div>
+                <div id="links" class="flex flex-col">
+                    <a href="./shop.html" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Shop</a>
+                    <a href="discord.gg/" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Discord</a>
+                    <a href="./about.html" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">About</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center p-2 m-1 md:items-start md:justify-start">
+                <div id="contacts" class="flex flex-col mb-4">
+                    <h1 class="text-sm text-amber-400 font-semibold font-[Roboto]">Contacts</h1>
+                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Customer Contact</a>
+                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">Business Contact</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center p-2 m-1 md:items-start md:justify-start">
+                <div id="information" class="flex flex-col items-start">
+                    <h1 class="text-sm text-amber-400 font-semibold font-[Roboto]">Information</h1>
+                    <a href="./TOS.html" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600 whitespace-nowrap">Terms of Service</a>
+                    <a href="#" class="text-sm text-gray-400 font-normal font-[Roboto] hover:text-red-600">F.A.Q</a>
+                </div>
+            </div>
+        </div>
+        <div class="items-center justify-center mt-4">
+            <p class="text-amber-400 text-sm font-bold font-[Roboto]">&copy;2025 ASCENSION SIM STUDION</p>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+</html>

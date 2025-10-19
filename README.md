@@ -1,36 +1,36 @@
 # ASCENSION SIM STUDIO — Website
 
-**ASCENSION SIM STUDIO** adalah sebuah studio fiksi yang berfokus pada pembuatan **mod premium untuk game balap _Assetto Corsa_**.  
-Website ini berfungsi sebagai platform untuk **menampilkan dan menjual produk-produk modifikasi mobil dan trek balap** yang imersif serta realistis.
+**ASCENSION SIM STUDIO** is a fictional studio focused on creating **premium mods for the racing game _Assetto Corsa_**.  
+This website serves as a platform to **showcase and sell immersive and realistic car and racing track modifications**.
 
 ---
 
-## Teknologi yang Digunakan
+## Technologies Used
 
-- **HTML** – Struktur utama halaman  
-- **Tailwind CSS** – Styling modern dan responsif  
-- **JavaScript (Vanilla)** – Fungsionalitas dasar seperti:
-  - Carousel gambar  
-  - Navigasi menu versi mobile  
+- **HTML** – Main structure of the page  
+- **Tailwind CSS** – Modern and responsive styling  
+- **JavaScript (Vanilla)** – Basic functionalities such as:
+  - Image carousel  
+  - Mobile menu navigation  
 
 ---
 
-## Tampilan Website
+## Website Preview
 
-Beberapa tangkapan layar dari tampilan website:
+Some screenshots of the website:
 
-- Suasana balapan saat matahari terbenam  
-- Detail bagian belakang mobil di lintasan lurus  
-- Tampilan detail sisi mobil dengan livery kustom  
+- Racing atmosphere at sunset  
+- Rear view of a car on a straight track  
+- Detailed side view of a car with custom livery  
 
 > 
 ---
 
-## Video YouTube (Tentatif)
+## YouTube Video (Tentative)
 
-Tonton video presentasi proyek kami di YouTube untuk melihat lebih banyak fitur dan detail dari website serta mod yang kami tawarkan.
+Watch our project presentation video on YouTube to see more features and details of the website and the mods we offer.
 
-📺 **[Link Video Akan Ditambahkan di Sini]**
+**[Video Link Will Be Added Here]**
 
 ---
 
