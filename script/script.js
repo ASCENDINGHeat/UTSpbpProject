@@ -20,6 +20,41 @@ const products = {
         }
     },
     
+    "lmh-pack": {
+        name: "LMH Pack",
+        price: "$24,99",
+        description: "Dominate the endurance racing scene with our LMH Pack, featuring cutting-edge Le Mans Hypercars designed for ultimate performance and innovation. This pack includes: \n\n- Toyota GR010 Hybrid\n- Peugeot 9X8\n- Glickenhaus 007 LMH\n- Cadillac V-Series.R\n- And More!",
+        images: [
+            "./assets/img/productImg/LMH/lmh (1).jpg",
+            "./assets/img/productImg/LMH/lmh (2).jpg",
+            "./assets/img/productImg/LMH/lmh (3).jpg"
+        ],
+        tags: ["Cars", "LMH", "Endurance"],
+        specs: {
+            "Top Speed": "330 km/h",
+            "Engine": "Hybrid",
+            "Power": "670 HP"
+        }
+    },
+
+    "formula-hybrid": {
+        name: "Formula Hybrid",
+        price: "$29,99",
+        description: "Experience the pinnacle of open-wheel racing with our Formula Hybrid pack, featuring state-of-the-art hybrid technology for unmatched speed and agility.",
+        images: [
+            "./assets/img/productImg/Formula/img (1).jpg",
+            "./assets/img/productImg/Formula/img (2).jpg",
+            "./assets/img/productImg/Formula/img (3).jpg",
+            "./assets/img/productImg/Formula/img (4).jpg",
+            "./assets/img/productImg/Formula/img (5).jpg"
+        ],
+        tags: ["Cars", "Formula", "Hybrid"],
+        specs: {
+            topSpeed: "350 km/h",
+            engine: "Hybrid V6 Turbo",
+            power: "1000 HP"
+        }
+    }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
