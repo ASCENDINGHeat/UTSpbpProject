@@ -183,7 +183,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     price: product.price
                 });
                 localStorage.setItem('cart', JSON.stringify(cart));
-                alert(`${product.name} has been added to your cart!`);
+                // Show popup
+                const popup = document.getElementById('addcartpopup');
+                popup.textContent = `${product.name} has been added to your cart.`;
+                popup.classList.remove('opacity-0', 'pointer-events-none');
+                setTimeout(() => {
+                    popup.classList.add('opacity-0', 'pointer-events-none');
+                }, 3000); // Hide after 3 seconds
             }
         });
     });

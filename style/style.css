@@ -1,2 +1,45 @@
 @import 'tailwindcss';
 
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.about-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #1e2939; /* Tailwind's bg-gray-800 */
+    height: 100vh;
+    padding: 1rem;
+}
+
+.about-1 h1 {
+    font-size: 2rem; /* Tailwind's text-4xl */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-1 p {
+    font-size: 1rem; /* Tailwind's text-lg */
+    color: #d1d5db; /* Tailwind's text-gray-300 */
+    max-width: 40rem;
+    line-height: 1.5;
+}
+
+/* Image Styling */
+.image-trans {
+    width: 70%;
+    height: auto;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
