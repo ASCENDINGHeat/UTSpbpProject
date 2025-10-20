@@ -52,28 +52,31 @@
         </div>
     </nav>
     <div class="flex flex-col min-h-screen">
-        <div class="flex items-center justify-center flex-grow bg-blue-900">
-            <div id="carousel-container" class="relative w-full h-full mx-auto overflow-hidden rounded-lg shadow-lg">
+        <div class="flex flex-col items-center justify-center flex-grow bg-blue-900">
+            <div class="flex flex-col items-center justify-center mb-8 text-center px-4">
+                <h1 class="text-4xl font-bold text-center text-white md:text-6xl lg:text-7xl font-[Roboto]">Welcome to ASCENSION SIM STUDIO</h1>
+                <p class="max-w-3xl mt-4 text-lg text-center text-gray-300 md:text-xl font-[Roboto]">Crafting premium Assetto Corsa mods with an unwavering commitment to realism and immersion. Experience the art of virtual driving, perfected.</p>
+                <button class="bg-blue-700 rounded-2xl border-2 text-white text-center text-lg md:text-[2rem] w-[40rem]">Go to Shop</button>
+            </div>
+            <div id="carousel-container" class="relative w-9/12 h-auto mx-[10vh] overflow-hidden rounded-lg shadow-lg mb-8">
+
                 <div id="slider" class="flex transition-transform duration-500 ease-in-out">
-                    
                     <div class="flex-shrink-0 w-full">
                         <img src="./assets/img/bgimage (1).jpg" alt="Slide 1" class="object-cover w-full">
                     </div>
-                    
                     <div class="flex-shrink-0 w-full">
                         <img src="./assets/img/bgimage (2).jpg" alt="Slide 2" class="object-cover w-full">
                     </div>
-                    
                     <div class="flex-shrink-0 w-full">
                         <img src="./assets/img/bgimage (3).jpg" alt="Slide 3" class="object-cover w-full">
                     </div>
-                
                 </div>
-                
+
+
                 <button id="prev-button" class="w-[10vw] absolute p-2 -translate-y-1/2 rounded-full top-1/2 left-4 bg-white/50 hover:bg-white/80 justify-center flex flex-auto">
                     <img src="./assets/icon/angle-left.svg" alt="previousbtn" class="max-w-10 max-h-10">
                 </button>
-                
+
                 <button id="next-button" class="w-[10vw] absolute p-2 -translate-y-1/2 rounded-full top-1/2 right-4 bg-white/50 hover:bg-white/80 justify-center flex flex-auto">
                     <img src="./assets/icon/angle-left.svg" alt="next" class="rotate-180 max-w-10 max-h-10">
                 </button>

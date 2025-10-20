@@ -41,6 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
             goToSlide(currentIndex - 1);
         });
 
+        // Auto-scroll every 5 seconds
+        setInterval(() => {
+            goToSlide(currentIndex + 1);
+        }, 5000); // Adjust the interval time as needed (5000ms = 5 seconds)
+
         goToSlide(0);
     }
 
