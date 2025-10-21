@@ -1,4 +1,4 @@
-# ASCENSION SIM STUDIO — Website
+# [ASCENSION SIM STUDIO]('https://ascendingheat.github.io/UTSpbpProject/') — Website
 
 **ASCENSION SIM STUDIO** is a fictional studio focused on creating **premium mods for the racing game _Assetto Corsa_**.  
 This website serves as a platform to **showcase and sell immersive and realistic car and racing track modifications**.
@@ -35,13 +35,11 @@ Some screenshots of the website:
 
 ---
 
-## YouTube Video (Tentative)
-
-Watch our project presentation video on YouTube to see more features and details of the website and the mods we offer.
+## YouTube Video
 
 <details>
   <summary>video</summary>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/OFn5MiGouro?si=jK8wcZWk9BdKQSQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/BYdt-T1ufLY?si=1Kn_gYkKxbxY1mhv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </details>
 
 ---
