@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="./style/tailwind.css">
-    <link rel="stylesheet" href="./style/style.css">
 </head>
-<body class="bg-gray-800">
+<body>
     <nav class="sticky top-0 z-50 flex flex-col w-full text-white bg-gray-800 shadow-lg">
         <div class="flex flex-auto w-full px-4 mx-auto">
             <div class="flex justify-between w-full h-16 space-x-8">
                 <div class="flex items-center flex-shrink-0">
                     <a href="./index.html" class="text-xl font-bold">
-                        <img src="./assets/svg/logo-full-fix.svg" alt="icon" class="inline-block w-auto h-[7vh] mr-2">
+                        <img src="./assets/icon/navbar-logo.png" alt="icon" class="inline-block w-auto h-[7vh] mr-2">
                     </a>
                 </div>
 
@@ -52,20 +51,24 @@
             </a>
         </div>
     </nav>
-    <div id="content">
-        <div class="about-1">
-            <div class="text-border-custom">
-                <h1>ASCENSION SIM STUDIO</h1>
-                <p>ASCENSION SIM STUDIO was born from a pure passion for sim racing and an insatiable desire for realism. As dedicated Assetto Corsa players, we spent countless hours on the track, always searching for a more immersive experience. We realized that if we wanted to drive the most detailed and true-to-life vehicles, we would have to build them ourselves. That's how our journey began—not as a business, but as a commitment to pushing the boundaries of what's possible in the virtual driver's seat.</p>
-            </div>
-            <img src="./assets/img/about/aboutpage (1).jpg" alt="imgae" class="about-1 image-trans">
-        </div>
-        <div class="about-1">
-            <img src="./assets/img/about/aboutpage (2).jpg" alt="image" class="about-1 image-trans">
-            <div class="text-border-custom">
-                <h1>Crafting Virtual Perfection</h1>
-                <p>Our mission is simple: to craft premium Assetto Corsa mods with an unwavering commitment to realism and immersion. Every vehicle we create is a blend of artistry and engineering, built with meticulous attention to detail, authentic physics, and high-fidelity sounds. We want you to feel the roar of the engine and the grip of the tires as if you were truly there. Experience the art of virtual driving, perfected.</p>
-            </div>
+    <div class="bg-gray-800 flex flex-col items-center justify-center min-h-screen p-8">
+        <h1 class="text-4xl font-bold text-white mb-8">Contact Us</h1>
+        <div class="bg-gray-700 rounded-lg shadow-lg p-6 w-full max-w-lg">
+            <form action="#" method="POST" class="flex flex-col space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-white">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 bg-gray-600 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-white">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-gray-600 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-white">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 bg-gray-600 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Send Message</button>
+            </form>
         </div>
     </div>
     <footer class="flex flex-col items-center justify-center p-4 m-0 bg-gray-800">
@@ -103,5 +106,6 @@
         </div>
     </footer>
     <script type="module" src="./script/script.js"></script>
+    <script type="module" src="./script/contacts.js"></script>
 </body>
 </html>

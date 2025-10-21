@@ -1,45 +1,57 @@
 @import 'tailwindcss';
 
+/* Content Container */
 #content {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    max-height: 100vh;
+    background-color: #1e2939; /* Dark gray background */
+    color: white;
+    margin-bottom: 10rem;
+    box-shadow: #d1d5db;
 }
 
+/* About Section */
 .about-1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: #1e2939; /* Tailwind's bg-gray-800 */
-    height: 100vh;
-    padding: 1rem;
+    height: 90vh;
+    padding: 2rem;
+    gap: 2rem; /* Add spacing between elements */
 }
 
+/* Text Container */
+.text-border-custom {
+    background-color: rgba(208, 208, 208, 0.432); /* Light gray with transparency */
+    border: 3px solid #d1d5db; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Limit text container width */
+}
+
+/* Headings */
 .about-1 h1 {
-    font-size: 2rem; /* Tailwind's text-4xl */
+    font-size: 2.5rem; /* Large font size */
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
+/* Paragraphs */
 .about-1 p {
-    font-size: 1rem; /* Tailwind's text-lg */
-    color: #d1d5db; /* Tailwind's text-gray-300 */
-    max-width: 40rem;
-    line-height: 1.5;
+    font-size: 1.25rem; /* Medium font size */
+    color: #d1d5db; /* Light gray text */
+    line-height: 1.6; /* Improve readability */
 }
 
 /* Image Styling */
 .image-trans {
-    width: 70%;
-    height: auto;
-    margin-left: 2rem;
-    border-radius: 1rem;
-    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
+    width: 40%; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 16px; /* Rounded corners */
+    object-fit: cover; /* Ensure image fits nicely */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
