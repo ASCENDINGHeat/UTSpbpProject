@@ -21,16 +21,25 @@ Some screenshots of the website:
 <details>
 <summary>expand</summary>
 
-![ss1](./assets/img/bgimage%20(1).jpg)
-![ss2](./assets/img/bgimage%20(2).jpg)
+![ss2](./webScreenshot/webscreen%20(2).png)
+![ss3](./webScreenshot/webscreen%20(6).png)
+![ss3](./webScreenshot/webscreen%20(3).png)
+![ss1](./webScreenshot/webscreen%20(1).png)
+![ss3](./webScreenshot/webscreen%20(4).png)
+![ss3](./webScreenshot/webscreen%20(5).png)
+![ss3](./webScreenshot/webscreen%20(7).png)
 </details>
+
 ---
 
 ## YouTube Video (Tentative)
 
 Watch our project presentation video on YouTube to see more features and details of the website and the mods we offer.
 
-**[Video Link Will Be Added Here]**
+<details>
+  <summary>video</summary>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/OFn5MiGouro?si=jK8wcZWk9BdKQSQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</details>
 
 ---
 
