@@ -8,11 +8,14 @@ This website serves as a platform to **showcase and sell immersive and realistic
 ## Technologies Used
 
 - **HTML** – Main structure of the page  
+- **CSS** – CSS styling for about page content
 - **Tailwind CSS** – Modern and responsive styling  
 - **JavaScript (Vanilla)** – Basic functionalities such as:
   - Image carousel  
   - Mobile menu navigation  
-
+  - Cart system
+  - Popup Modal
+  - Contact autofill
 ---
 
 ## Website Preview
