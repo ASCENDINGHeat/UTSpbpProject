@@ -18,12 +18,7 @@ This website serves as a platform to **showcase and sell immersive and realistic
 ## Website Preview
 
 Some screenshots of the website:
-
-- Racing atmosphere at sunset  
-- Rear view of a car on a straight track  
-- Detailed side view of a car with custom livery  
-
-> 
+> [ss1](./assets/img/bgimage%20(1).jpg)
 ---
 
 ## YouTube Video (Tentative)
