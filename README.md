@@ -37,10 +37,7 @@ Some screenshots of the website:
 
 ## YouTube Video
 
-<details>
-  <summary>video</summary>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/BYdt-T1ufLY?si=1Kn_gYkKxbxY1mhv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</details>
+[TI2024D ALFINO JAUHAR 24051204120 - Project Mandiri PBP 2025/2026 Ganjil](https://youtu.be/BYdt-T1ufLY?si=bVzKkaY4xv0tJk5z)
 
 ---
 
